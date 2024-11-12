@@ -69,28 +69,25 @@ main {
 
 /* Contenedor de cada bloque de título y descripción */
 .content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: #f9f9f9;
     padding: 20px;
     margin-top: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    text-align: center; /* Opcional, para centrar también el texto de los párrafos */
 }
 
-/* Títulos */
-h2, h3 {
+h2 {
     font-family: var(--fuente-secundaria);
     font-weight: bold;
     margin: 0;
-}
-
-/* Título h2 */
-h2 {
     color: var(--color-primario);
     font-size: 32px;
 }
-
-/* Título h3 */
 h3 {
     color: var(--color-secundario);
     font-size: 24px;
