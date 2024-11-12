@@ -1,0 +1,174 @@
+/* redes-sociales.css */
+:root {
+    --color-primario: #3498db;
+    --color-secundario: #000c74;
+    --color-activo: #000c74;
+    --color-desactivo: #95a5a6;
+    --fuente-principal: 'Roboto', sans-serif;
+    --fuente-secundaria: 'Open Sans', sans-serif;
+}
+
+/* Body */
+body {
+    font-family: var(--fuente-principal);
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 100px; /* Para evitar que el contenido se superponga con el header */
+}
+
+/* Cabecera y navegación */
+header {
+    background-color: var(--color-primario);
+    padding: 20px 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--color-secundario);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilo de los títulos principales */
+h2 {
+    font-family: var(--fuente-secundaria);
+    color: var(--color-primario);
+    font-size: 32px;
+    margin-top: 80px; /* Para evitar que se sobreponga con el header */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilo de los enlaces en la lista de redes sociales */
+a {
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Estilo de los títulos principales */
+h2 {
+    font-family: var(--fuente-secundaria);
+    color: var(--color-primario);
+    font-size: 32px;
+    margin-top: 80px; 
+    font-weight: bold;
+    text-align: center;
+}
+
+a:hover {
+    color: var(--color-activo);
+}
+
+/* Contenedor de las redes sociales y datos de contacto */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 40px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* Estilo de los bloques de redes sociales y datos de contacto */
+.socials, .contacto {
+
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 48%;
+}
+
+/* Títulos dentro de cada sección */
+.socials h3, .contacto h3 {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+/* Estilo de los párrafos dentro de redes sociales y contacto */
+.socials p, .contacto p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Estilo de los enlaces en las secciones de redes sociales y contacto */
+.socials a, .contacto a {
+    color: var(--color-primario);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.socials a:hover, .contacto a:hover {
+    color: var(--color-activo);
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    body {
+        padding-top: 120px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .socials, .contacto {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto; /* Esto asegura que el footer siempre esté al final */
+}

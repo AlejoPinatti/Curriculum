@@ -1,0 +1,161 @@
+:root {
+    --color-primario: #3498db;
+    --color-secundario: #000c74;
+    --color-activo: #000c74;
+    --color-desactivo: #95a5a6;
+    --fuente-principal: 'Roboto', sans-serif;
+    --fuente-secundaria: 'Open Sans', sans-serif;
+}
+
+/* Body */
+body {
+    font-family: var(--fuente-principal);
+    margin: 0;
+    padding: 0 20px; /* Espacio a los lados */
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    flex-direction: column;
+    min-height: 100vh; /* Esto asegura que la altura mínima sea 100vh */
+    text-align: center;
+    padding-top: 80px; /* Para evitar que el contenido se superponga con el header */
+}
+
+/* Cabecera y navegación */
+header {
+    background-color: var(--color-primario);
+    padding: 20px 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--color-secundario);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilo de la imagen */
+img {
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;  /* Centrado horizontal de la imagen */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Caja de contenido */
+.content-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    text-align: left;
+    width: 100%;  /* Asegura que la caja ocupe el 100% del ancho disponible */
+    max-width: 800px; /* Limita el ancho máximo de la caja */
+    margin-bottom: 50px; /* Espacio adicional al fondo para que no toque el footer */
+}
+
+/* Títulos */
+h2 {
+    font-family: var(--fuente-secundaria);
+    color: var(--color-primario);
+    font-size: 32px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: var(--fuente-secundaria);
+    color: var(--color-secundario);
+    font-size: 24px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+/* Estilo de los párrafos */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Estilo para los elementos importantes (como los datos personales) */
+strong {
+    color: var(--color-primario);
+    font-weight: bold;
+}
+
+/* Mejorar el espaciado */
+section {
+    margin-top: 30px;
+}
+
+/* Efecto de hover para los párrafos */
+p:hover {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive design para pantallas más pequeñas */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    text-align: center;
+    padding: 10px 0; /* Ajuste de padding para el footer */
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 40px;
+}
+ 

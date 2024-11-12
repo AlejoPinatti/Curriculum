@@ -1,0 +1,158 @@
+/* sobre-mi.css */
+:root {
+    --color-primario: #3498db;
+    --color-secundario: #000c74;
+    --color-activo: #000c74;
+    --color-desactivo: #95a5a6;
+    --fuente-principal: 'Roboto', sans-serif;
+    --fuente-secundaria: 'Open Sans', sans-serif;
+}
+
+/* Body */
+body {
+    font-family: var(--fuente-principal);
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabecera y navegación */
+header {
+    background-color: var(--color-primario);
+    padding: 20px 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--color-secundario);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Contenedor principal */
+main {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    flex-grow: 1; /* Asegura que el main ocupe el espacio disponible */
+}
+
+/* Contenedor de cada bloque de título y descripción */
+.content-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Títulos */
+h2, h3 {
+    font-family: var(--fuente-secundaria);
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Título h2 */
+h2 {
+    color: var(--color-primario);
+    font-size: 32px;
+}
+
+/* Título h3 */
+h3 {
+    color: var(--color-secundario);
+    font-size: 24px;
+}
+
+/* Párrafos */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: left;
+}
+
+ul {
+    text-align: left;
+    font-size: 18px;
+    margin-left: 40px;
+}
+
+strong {
+    color: var(--color-primario);
+    font-weight: bold;
+}
+
+/* Efectos de hover en párrafos */
+p:hover {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    text-align: center;
+    padding: 10px 0; /* Ajuste de padding para el footer */
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 40px;
+}
+   
+
