@@ -59,11 +59,11 @@ nav a:hover {
 /* Estilo de la imagen */
 img {
     border-radius: 50%;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
     margin: 20px auto;  /* Centrado horizontal de la imagen */
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
 }
 
 /* Caja de contenido */
