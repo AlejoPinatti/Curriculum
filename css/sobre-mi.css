@@ -1,6 +1,6 @@
 /* sobre-mi.css */
 :root {
-    --color-primario: #3498db;
+    --color-primario: #4851a1;
     --color-secundario: #000c74;
     --color-activo: #000c74;
     --color-desactivo: #95a5a6;
@@ -71,14 +71,19 @@ main {
 .content-box {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; /* Centrado vertical por defecto */
     flex-direction: column;
     background-color: #f9f9f9;
     padding: 20px;
     margin-top: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Opcional, para centrar también el texto de los párrafos */
+    text-align: center; /* Centrado de texto dentro del contenedor */
+}
+
+/* Contenedor de educación - Anula el centrado vertical */
+#educacion {
+    align-items: flex-start; /* Alinea los elementos al inicio (izquierda) */
 }
 
 h2 {
@@ -88,6 +93,7 @@ h2 {
     color: var(--color-primario);
     font-size: 32px;
 }
+
 h3 {
     color: var(--color-secundario);
     font-size: 24px;
@@ -151,5 +157,52 @@ footer {
     bottom: 0;
     margin-top: 40px;
 }
-   
 
+/* Estilos para la sección de Informática */
+.informatica-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+.informatica-section {
+    width: 30%; /* Ajusta el ancho de cada sección */
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.informatica-section h4 {
+    text-align: center;
+    color: var(--color-secundario);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.informatica-section ul {
+    margin-left: 20px;
+}
+
+/* Elimina el estilo .informatica.titulo que ya no es necesario */
+.informatica.titulo {
+    display: contents; /* Esto elimina el div .informatica.titulo del flujo y permite que los estilos de .informatica-content funcionen correctamente */
+}
+
+.education-entry {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 15px;
+
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.education-entry h4 {
+    color: var(--color-secundario);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.education-entry p {
+    margin: 5px 0;
+}
