@@ -12,6 +12,7 @@ body {
     font-family: var(--fuente-principal);
     margin: 0;
     padding: 0 20px; /* Espacio a los lados */
+    background-attachment: fixed;
     background-image: url('../img/fondo.jpg'); /* Aquí agregamos el fondo */
     background-size: cover; /* Asegura que la imagen cubra todo el fondo */
     background-position: center center; /* Centra la imagen de fondo */
@@ -32,7 +33,7 @@ header {
     padding: 20px 0;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -62,16 +63,15 @@ nav a:hover {
 /* Estilo de la imagen */
 img {
     border-radius: 50%;
-
     margin: 20px auto;  /* Centrado horizontal de la imagen */
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     object-fit: contain;
 }
 
-/* Caja de contenido */
+/* Caja de contenido (Datos Personales y Formación Académica) */
 .content-box {
-    background-color: #fff;
+    background-color: #f9f9f9; /* Fondo gris claro */
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -163,13 +163,13 @@ footer {
     margin-top: 40px;
 }
 
+/* Educación (Formación Académica) */
 .education-entry {
     text-align: left;
     margin-bottom: 20px;
     padding: 15px;
-
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Fondo gris claro */
 }
 
 .education-entry h4 {
