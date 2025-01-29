@@ -13,7 +13,10 @@ body {
     font-family: var(--fuente-principal);
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-image: url('../img/fondo.jpg'); /* Aquí agregamos el fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
     color: #333;
     display: flex;
     flex-direction: column;
@@ -163,6 +166,7 @@ a:hover {
 
 /* Footer */
 footer {
+    color: #f4f4f4;
     background-color: var(--color-primario);
     display: flex;
     justify-content: center; /* Centrado horizontal */

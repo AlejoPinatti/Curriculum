@@ -12,8 +12,11 @@ body {
     font-family: var(--fuente-principal);
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-image: url('../img/fondo.jpg'); /* Aquí agregamos el fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centra el contenido verticalmente */
@@ -74,7 +77,7 @@ p {
     font-size: 18px;
     line-height: 1.6;
     margin: 20px 0;
-    color: #555;
+
 }
 
 /* Enlaces dentro de p */
@@ -119,6 +122,7 @@ img {
 
 /* Footer */
 footer {
+    color: #f4f4f4;
     background-color: var(--color-primario);
     display: flex;
     justify-content: center; /* Centrado horizontal */
@@ -128,3 +132,4 @@ footer {
     width: 100%;
     margin-top: auto; /* Esto asegura que el footer siempre esté al final */
 }
+
