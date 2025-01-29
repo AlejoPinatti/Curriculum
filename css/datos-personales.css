@@ -30,7 +30,7 @@ body {
 /* Cabecera y navegación */
 header {
     background-color: var(--color-primario);
-    padding: 20px 0;
+    padding: 10px 0;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: fixed;
